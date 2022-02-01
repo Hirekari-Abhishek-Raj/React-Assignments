@@ -14,7 +14,23 @@
     <div id="root"></div>
     <script type="text/babel">
 //React Code here
- ReactDOM.render(<div></div>,document.getElementById('root'));
+const responsiveUI= React.createElement(
+  'div',{className:'container'},
+  React.createElement('div',{className:'row1'},
+  React.createElement('div',{className:'yellow1'},null),
+  React.createElement('div',{className:'yellow1'},null),
+  ),
+  React.createElement('div',{className:'row2'},
+  React.createElement('div',{className:'red1'},null)
+  ),
+  React.createElement('div',{className:'row3'},
+  React.createElement('div',{className:'blue'},null),
+  React.createElement('div',{className:'blue'},null),
+  React.createElement('div',{className:'blue blue3'},null)
+  )
+)
+
+ ReactDOM.render(responsiveUI,document.getElementById('root'));
 
 </script>
 <!--
